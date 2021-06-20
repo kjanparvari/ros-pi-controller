@@ -1,0 +1,8 @@
+prefix=/home/kjanparvari/Projects/ros/hw2/catkin_ws/devel
+
+Name: pi_controller
+Description: Description of pi_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,39 @@
+
+IN catkin_ws ENTER:
+source ./devel/setup.bash
+/////////////////////////////////////////
+roscore
+
+/////////////////////////////////////////
+
+export TURTLEBOT3_MODEL=waffle_pi
+// burger   -   waffle  -   waffle_pi
+
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+roslaunch turtlebot3_fake turtlebot3_fake.launch
+
+/////////////////////////////////////////
+
+rosrun square_movement generator.py
+
+/////////////////////////////////////////
+
+rosrun square_movement pose_monitor.py
+
+/////////////////////////////////////////
+
+rosrun square_movement move_robot.py
+
+/////////////////////////////////////////
+
+rosrun pi_controller move_robot.py
+
+/////////////////////////////////////////
+
+
+
+/////////////////////////////////////////
+
